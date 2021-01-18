@@ -8,7 +8,7 @@ class Post extends React.Component {
     componentDidMount() {
         axios.get(`https://jsonblob.com/api/jsonBlob/a7db6075-58e1-11eb-bd60-5bef0f35e980`)
             .then(res => {
-                const post = res.data.posts.map((post) => {
+                const post = res.data.posts.forEach((post) => {
                     let id = this.props.match.params.id;
                     if (post.id.toString() === id) {
                         this.setState({ post });
@@ -26,7 +26,7 @@ class Post extends React.Component {
                 <div className="row">
                     <div className="col-12">
                         <div className="mt5">
-                            <img src={this.state.post.image_url} />
+                            <img src={this.state.post.image_url} alt="nophoto" />
                         </div>
                         <div><h3>{this.state.post.title}</h3>
                             <h5>Author: {this.state.post.author}</h5>

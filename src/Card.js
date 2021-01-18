@@ -12,7 +12,7 @@ function Card(props) {
             <div className="card">
                 <Link to={`/post/${props.postInfo.id}`}>
                     <div className="card-image">
-                        <img src={props.postInfo.image_url} height='450px' width='450px' />
+                        <img src={props.postInfo.image_url} alt="nophoto" height='450px' width='450px' />
                         <span className="card-title">{props.postInfo.title}</span>
                     </div>
                     <div className="card-content">

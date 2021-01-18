@@ -5,7 +5,7 @@ function Navbar() {
         <nav>
             <div className="nav-wrapper">
                 <ul className="hide-on-med-and-down">
-                    <div className="left"><li><Link to="/" className="left brand-logo"><img src="https://image.freepik.com/free-vector/letter-b-logo-power-red_42564-7.jpg" height='60px' width='70px'></img></Link></li>
+                    <div className="left"><li><Link to="/" className="left brand-logo"><img src="https://image.freepik.com/free-vector/letter-b-logo-power-red_42564-7.jpg" alt="noimage" height='60px' width='70px'></img></Link></li>
                     </div>
 
                     <div className="right">
